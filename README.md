@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="logo.png" alt="AJSVM Logo" width="400"/>
+</div>
+
 # AJSVM - Java Script Virtual Machine
 
 Welcome to **AJSVM**! This is a custom, stack-based virtual machine built entirely from scratch in TypeScript to execute JavaScript. 
@@ -61,7 +65,7 @@ node index.js
 
 ---
 
-## 🗺️ Roadmap
+## 💡 Roadmap
 
 The first version is nearly done, here is what coming next:
 
