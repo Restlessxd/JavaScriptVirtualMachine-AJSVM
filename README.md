@@ -23,7 +23,7 @@ The project is split into several logical parts that work together to parse, com
   The heart of the translation process. It walks through the AST and emits our custom bytecode. To make reverse-engineering even harder, the compiler randomizes the opcode mapping on every build, encrypts strings, and even inserts fake instructions (dummy blocks) to break static analysis.
 
 - **Custom Heap & GC (`vm/heap.ts`)**
-  Yep, we built our own memory management! It handles memory allocation for objects, arrays, and closures using a custom DataView buffer. It even has its own Mark-and-Sweep Garbage Collector to prevent memory leaks during execution.
+  It handles memory allocation for objects, arrays, and closures using a custom DataView buffer. It even has its own Mark-and-Sweep Garbage Collector to prevent memory leaks during execution.
 
 - **The VM Engine (`vm/vm.ts` & `vm/closure-handler.ts`)**
   The execution core. It runs the main loop, decodes the bytecode, and executes instructions on a custom call stack. It bridges the gap between our isolated environment and the native Node.js/Browser world using an Interop Handler.
