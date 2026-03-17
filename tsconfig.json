@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "outDir": "./compiled",
+        "rootDir": "./ts",
+        "resolveJsonModule": true,
+        "target": "esnext",
+        "module": "NodeNext",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true
+    },
+    "hooks": [
+      "copy-files"
+    ],
+    "include": [
+      "ts/**/*"
+    ],
+    "exclude": [
+      "ts/integration.test.ts"
+    ]
+  }
